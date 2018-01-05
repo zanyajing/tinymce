@@ -1,0 +1,67 @@
+﻿.mce-content-body {
+    font-family:'Microsoft YaHei'!important;
+}
+.mce-content-body .focus{
+	position: relative;
+}
+.mce-content-body .focus-hover{
+	background: rgba(26,179,148,0.5);
+}
+
+@media screen and (max-width: 768px) {
+    #tinymce {
+        padding: 20px !important;
+    }
+}
+
+#tinymce{
+	padding:20px 90px!important;
+}
+
+
+
+.mce-content-body em{
+	font-style:normal;
+}
+.mce-item-table{
+    border-collapse:collapse!important;
+    border:1px solid #000!important;
+    margin-right:auto!important;
+    margin-left:auto!important;
+}
+
+.mce-content-body td{
+    border:1px solid #000!important;
+    word-wrap:break-word!important;
+    font-size: 12pt;
+}
+
+.mce-content-body li{
+    margin-top:6px;
+    margin-bottom:0px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12pt;
+}
+.mce-content-body p{ 
+    margin-top:6px;
+    margin-bottom:0px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12pt;
+    word-break: break-all!important;
+    word-wrap: break-word!important;
+}
+.mce-content-body .text-indent{
+   text-indent:2em;
+}
+.mce-content-body .mce-i-none{
+    background-repeat: no-repeat!important;
+    background-size: 16px 15px!important;
+}
+
+ol { counter-reset: item;padding-left:0px ;margin-top:6px;margin-bottom:0px}
+ul { padding-left:18px ;margin-top:6px;margin-bottom:0px}
+li > ol {counter-reset: item;margin:3px 0}
+ol li { display: block }
+ol li:before { content: counters(item, ".") " "; counter-increment: item;}

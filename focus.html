@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+		  .shoot {
+  top: 50%;
+  left: 50%;
+  max-width: 80%;
+  min-width: 20%;
+  color: #fff;
+  font-size: .75rem;
+  text-align: center;
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: .5rem;
+  padding: 1rem;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+ }
+ .shoot img {
+  width: 1.5rem;
+ }
+ .hidden {
+   opacity: 0;
+   z-index: -1;
+ }
+ .show {
+  opacity: 1;
+  z-index: 99;
+ }
+		
+		</style>
+	</head>
+	<body>
+		<div onclick="cli()">信息信息上时间附件二夫人</div>
+	</body>
+	<script>
+		var Toast = function (text) {
+      if(document.querySelector('.shoot') === null ) {
+        //未添加过
+        var shootBox = document.createElement('div');
+        shootBox.className = 'shoot';
+        shootBox.innerHTML = "<img src='alert.png' /><br>"+text;
+        document.querySelector('body').appendChild(shootBox);
+        shootBox.className += ' show';
+        setTimeout(function() {
+          shootBox.className = 'shoot hidden';
+        },3000)
+      }else {
+        //已存在
+        var shootBox = document.querySelector('.shoot');
+        shootBox.innerHTML = text;
+        shootBox.className = 'shoot show';
+        setTimeout(function() {
+          shootBox.className = 'shoot hidden';
+        },3000)
+      }
+    }
+		function cli(){
+			Toast('收藏成功')
+		}
+		
+	</script>
+</html>

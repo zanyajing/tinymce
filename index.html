@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/bootstrap.css" />
+    <link rel="stylesheet" href="content/index.css" />
+</head>
+
+<body>
+
+<div id="edit-scroller" class="row cont " style="width:calc(100%-470px);height:calc(100vh - 61px);overflow-x:visible;position:relative;">
+	<div class="col-md-8 col-sm-8 col-xs-12 col-cler">
+		<form id="form" action="http://www.baidu.com" method="post" target="rfFrame">
+		    <textarea id="edit-me" style="visibility:hidden;"></textarea>
+		 
+		</form>
+	</div>	
+	
+	<div id="msg" class="plugin-area shadow col-md-4 col-sm-4 col-xs-0">
+	    <div class="plugin-close">
+	    	<i class="fa fa-angle-right"></i>
+	    </div>
+	    <div class="plugin-header clearfix">
+	        <div class="plugin-tabs clearfix">
+	        	  <div class="plugin-tab plugin-tab-active" >企业排名</div>
+	        	  <div class="plugin-tab" >纳税信用</div>
+	        </div>
+	    </div>
+	    <div class="plugin-container">
+	        <div class="plugin-main" style="height:100%;">
+	       		<div class="plugin-content" >企业排名</div>
+	       		<div class="plugin-content" >纳税信用</div>
+	       	</div>
+	    </div>
+	</div>
+</div>
+<iframe id="rfFrame" name="rfFrame" src="about:blank" style="display:none;"></iframe>
+<script src="jquery.js"></script>
+<script src="tinymce/jquery.tinymce.min.js"></script>
+<script src="tinymce/tinymce.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
